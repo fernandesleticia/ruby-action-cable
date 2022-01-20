@@ -3,4 +3,11 @@
     <div>
         <%= render @messages %>
     </div>
+    <div>
+
+        <%= form_for(@message, url: message_path) do |form| %>
+            <%= form.text_field :body %>
+            <%= form.submit %>
+        <% end %>
+    </div>
 </div>
