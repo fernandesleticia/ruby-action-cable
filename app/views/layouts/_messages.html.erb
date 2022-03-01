@@ -1,5 +1,7 @@
 <% flash.each do |message_type, message_content| %>
-    <div class='header' style='margin: 50px'>
+  <ul>    
+    <li>
         [<%= message_type %>] <%= message_content %>
-    </div>
+    </li>
+  </ul>
 <% end %>
