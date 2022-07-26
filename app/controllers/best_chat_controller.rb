@@ -1,4 +1,4 @@
-class ChatRoomController < ApplicationController
+class BestChatController < ApplicationController
   before_action :require_user
 
   def index

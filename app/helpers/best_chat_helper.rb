@@ -1,0 +1,2 @@
+module BestChatHelper
+end
