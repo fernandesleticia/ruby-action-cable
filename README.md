@@ -2,7 +2,7 @@
 A real time chat app using action cable and web sockets.
 
 ### What is Action Cable?
-A tool to integrate webspckets with your application.
+A tool to integrate websockets with your application.
 
 [See more on Rails Guides (Action Cable Overview)](https://guides.rubyonrails.org/action_cable_overview.html)
 
@@ -11,9 +11,16 @@ A tool to integrate webspckets with your application.
 
   Instantiated everytime a WebSocket is accepted by the server.
 - Channels
-  - BestChat
+  - BestChatChannel
 
     Encapsulates the logic for the chat channel
+    Methods:
+    - subscribed
+
+      Called when the the consumer has successfully become a subscriber
+    - unsubscribed
+
+      Executes any cleanup needed when channel is unsubscribed
 
 
 ### How to use
